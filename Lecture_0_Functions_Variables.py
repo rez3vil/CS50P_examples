@@ -5,5 +5,6 @@ def main():
 
 def square(n):
     return n*n
+    #you can use return n ** 2 / return pow (n, 2) as well instead of n*n
 
 main()
