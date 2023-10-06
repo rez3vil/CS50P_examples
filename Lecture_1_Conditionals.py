@@ -53,3 +53,108 @@ elif 60 <= score <= 70:
     print("Grade: D")
 else:
     print("Grade: F")
+    
+=================================
+#1
+x = int(input("What's x?"))
+
+if x % 2 == 0:
+    print("Even")
+else:
+    print ("Odd")
+
+#2
+def main():
+    x = int(input("What's x?"))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")
+
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+    
+main()
+
+#3
+def main():
+    x = int(input("What's x?"))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")
+
+def is_even(n):
+    return True if n % 2 == 0 else False
+    
+main()
+
+#4
+def main():
+    x = int(input("What's x?"))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")
+
+def is_even(n):
+    return n % 2 == 0
+    
+main()
+
+===========================================
+
+#1
+name = input("What's your name?")
+
+if name == "Harry":
+    print ("Gryffindor")
+elif name == "Hermione":
+    print ("Gryffindor")
+elif name == "Ron":
+    print ("Gryffindor")
+elif name == "Draco":
+    print ("Slytherin")
+else:
+    print ("Who?")
+
+#2
+name = input("What's your name?")
+
+if name == "Harry" or name == "Hermione" or name == "Ron":
+    print ("Gryffindor")
+elif name == "Draco":
+    print ("Slytherin")
+else:
+    print ("Who?")
+
+#3
+name = input("What's your name?")
+
+match name:
+    case "Harry":
+        print("Gryffindor")
+    case "Hermione":
+        print("Gryffindor")
+    case "Ron":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case _:
+        print("Who?")
+
+#4
+name = input("What's your name?")
+
+match name:
+    case "Harry" | "Hermione" | "Ron":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case _:
+        print("Who?")
+
+======================================
